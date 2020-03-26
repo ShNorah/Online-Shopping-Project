@@ -1,2 +1,3 @@
-# Online-Shopping-Project
-this is a pair project between sharon and i for an online shopping platform
+# EDU-Online-Shopping
+
+A project for an online shopping platform, where people can buy and sell different items and goods.
