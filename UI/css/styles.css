@@ -1,0 +1,112 @@
+.card {
+    box-shadow: 0 0px 4px 0 rgba(0,0,0,0.2);
+  width: 30%;
+  background-color: white;
+  font-family: 'Eczar', serif;
+  color: #1b262c;
+  float: none;
+  margin: auto;
+  border-radius: 3px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 7px;
+    
+}
+
+form {
+    font-size: 24px;
+    padding: 7%;
+}
+
+body {
+    background-color: #C59F9F;
+}
+
+input[type = text] {
+    width: 100%;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 1px;
+    padding: 12px 0px;
+}
+
+input[type = password] {
+    width: 100%;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 1px;
+    padding: 12px 0px;
+}
+
+input[type = email] {
+    width: 100%;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 1px;
+    padding: 12px 0px;
+}
+
+input[type = button] {
+    width: 100%;
+    border-radius: 50px;
+    border-color: #A84747;
+    padding: 2px;
+    margin-top: 12px;
+    background-color: #A84747;
+    font-family: 'Eczar', serif;
+    font-size: 24px;
+    box-shadow: 0 1px 3px 0 black;
+}
+
+input[type= button]:hover {
+    background-color: rgb(136, 49, 49);
+    color: whitesmoke;
+}
+
+p1 {
+    font-size: 18px;
+    text-align: left;
+}
+
+p2 {
+    font-size: 18px;
+    text-align: right;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #A84747;
+    margin: auto;
+    padding: 50px;
+    font-family: 'Eczar', serif;
+}
+
+.container2 > div {
+  width: auto;
+  margin: auto;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #A84747;
+    font-family: 'Eczar', serif;
+    padding: 40px;
+    margin: auto;
+}
+
+.nav-bar > div {
+    width: auto;
+    margin: auto;
+    text-align: center;
+    line-height: normal;
+    font-size: 18px;
+}
