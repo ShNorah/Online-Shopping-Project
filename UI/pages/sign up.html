@@ -6,14 +6,19 @@
         <link rel="stylesheet" href="/UI/css/styles.css"/>
         <script src="/UI/script/script.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Eczar|Gentium+Basic|Press+Start+2P|Signika+Negative&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <title>Sign Up</title>
     </head>
     <body>
-        <header class="nav-bar">
-            <div>LOGO</div>
-            <div>CART</div>
-            <div>SIGN UP</div>
-        </header>
+        <header class="container-fluid">
+            <div class="row">
+            <div class="col-sm-4"><a href="#"></a><img src="/UI/images/500.png" alt="edushop logo"></div>
+            <div class="col-sm-6">CATEGORIES</div>
+            <div class="col-sm-1"><a href="#">CART</a></div>
+            <div class="col-sm-1"><a href="/UI/pages/sign in.html">SIGN IN</a></div>
+            </div>
         <div class="card">
             <h1>Create account</h1>
             <form action="">
@@ -24,15 +29,17 @@
                 <label for="password">Password</label><br>
                 <input type="password" id="password" name="password"><br>
                 <input type="button" onclick="submit" value="SIGN UP">
-                <p1>Already have an account? Sign in</p1>
+                <br><br>
+                <p>Already have an account? <a href="/UI/pages/sign in.html"> Sign in</a></p>
             </form>
         </div>
         <br>
-        <footer class="container2">
-            <div>HELP</div>
-            <div>ADDRESS</div>
-            <div>ABOUT US</div>
-            <div>CONTACT US</div>
-        </footer>  
+        <footer class="container-fluid">
+            <div class="col-sm-3">HELP</div>
+            <div class="col-sm-3">ADDRESS</div>
+            <div class="col-sm-3">ABOUT US</div>
+            <div class="col-sm-3">CONTACT US</div>
+        </div>
+        </footer> 
     </body>
 </html>
