@@ -23,11 +23,13 @@
             <h1>Create account</h1>
             <form action="">
                 <label for="names">Full names</label><br>
-                <input type="text" id="names" name="names"><br>
+                <input type="text" id="names" name="names" required><br>
                 <label for="email" for="number">Email or phone number</label><br>
-                <input type="email" type="number" id="email or number" name="email or number"><br>
+                <input type="email" type="number" id="emailid" name="email or number" required><br>
                 <label for="password">Password</label><br>
-                <input type="password" id="password" name="password"><br>
+                <input type="password" id="password" name="password" required><br>
+                <label for="confirm password">confirm Password</label><br>
+                <input type="password" id="cpassword" name="confirm password" required><br>
                 <input type="button" onclick="submit" value="SIGN UP">
                 <br><br>
                 <p>Already have an account? <a href="/UI/pages/sign in.html"> Sign in</a></p>
