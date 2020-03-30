@@ -35,5 +35,5 @@ if (uname=""){
 }
 window.location =" https://shnorah.github.io/Online-Shopping-Project/";
 
-}
+} 
 
