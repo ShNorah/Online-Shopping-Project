@@ -3,73 +3,166 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/UI/css/home.css"/>    
+
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+        
+        <link rel="stylesheet" href="/UI/css/bootstrap.min.css"/>    
+        <link rel="stylesheet" href="/UI/css/slick.css"/>  
+        <link rel="stylesheet" href="/UI/css/slick-theme.css"/> 
+        <link href="UI/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet"> <!--load all styles -->     
+        <link rel="stylesheet" href="/UI/css/home.css"/>
+
     </head>
     <body>
         <!--header section-->
-        <div class="nav-bar" id="header">
-            <img id ="logo" src="/UI/images/logo.png">
-            <div class="dropdown">
-              <button class="dropbtn">CATEGORIES</button>
-              <div class="dropdowmn-content">
-                <a href="#">Shoes</a>
-                <a href="#">Clothes</a>
-                <a href="#">Jewellery</a>
-                <a href="#">Bags</a>
-              </div>
-             
+        <div class="edu-header">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+          <a class="navbar-brand" href="#">
+            <div class="navbar-brand__logo">
+              <img id ="logo" src="/UI/images/logo.png">
             </div>
-            <div><a href="/UI/pages/sign up.html">SIGNUP</a></div>
-            <div><a href="/UI/pages/sign in.html">LOGIN</a></div>
+            </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Office<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sports</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Casual</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav my-2 my-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
         </div>
+        <!--End of header-->
     
         <!--slides section-->
-        <div class="main">
-        <div class="edushop"><p><h1></h1>WELCOME TO EDUSHOP<br>SHOP AT HOME</h1></p></div>
-        <div class="slideshow-container"> 
-          <img class="mySlides" src="/UI/images/tech1.jpg">
-          <img class="mySlides" src="/UI/images/ss2.jpg">
-          <img class="mySlides" src="/UI/images/cart2.jpg">
-        </div> 
-      </div>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="slideshow-container"> 
+              <img class="mySlides" src="/UI/images/casual-banner-shoe.jpg">
+              <img class="mySlides" src="/UI/images/office-banner-shoe.jpg">
+              <img class="mySlides" src="/UI/images/sports-banner-shoe.jpg">
+            </div> 
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xm-12">
+              <div class="edu-product">
+                <a target="_blank" href="#">
+                  <div class="edu-product__image">
+                    <img src="/UI/images/shoes/women/shoe1.jpg" alt="a cute clothe" >
+                  </div>
+                  <div class="caption-image">CLOTHES</div>
+                </a>
 
-        <!--item display section-->
-        <div class="item-display">
-          <div class="img">
-            <a target="_blank" href="#">
-              <img src="/UI/images/Clothes/women/clothe1.jpg" alt="a cute clothe" width="300" height="200">
-            </a>
-            <div class="caption">CLOTHES</div>
-          </div>
-        <div class="img">
-            <a target="_blank" href="#">
-              <img src="/UI/images/shoes/men/mshoe1.jpg" alt="a really nice shoe" width="300" height="200">
-            </a>
-            <div class="caption">SHOES</div>
-          </div>
-         
-          <div class="img">
-            <a target="_blank" href="#">
-              <img src="UI//images/Jewellery/jewl1.jpg" alt="cute wedding ring" width="300" height="200">
-            </a>
-            <div class="caption">JEWELLERY</div>
-          </div>
-          <div class="img">
-            <a target="_blank" href="#">
-              <img src="/UI/images/bags/bag1.jpg" alt="a nice bag" width="300" height="200">
-            </a>
-            <div class="caption">BAGS</div>
-          </div>
-        
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xm-12">
+              <div class="edu-product">
+                <a target="_blank" href="#">
+                  <div class="edu-product__image">
+                    <img src="/UI/images/shoes/women/shoe1.jpg" alt="a cute clothe" >
+                  </div>
+                  <div class="caption-image">CLOTHES</div>
+                </a>
+
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xm-12">
+              <div class="edu-product">
+                <a target="_blank" href="#">
+                  <div class="edu-product__image">
+                    <img src="/UI/images/shoes/women/shoe1.jpg" alt="a cute clothe">
+                  </div>
+                  <div class="caption-image">CLOTHES</div>
+                </a>
+
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xm-12">
+              <div class="edu-product">
+                <a target="_blank" href="#">
+                  <div class="edu-product__image">
+                    <img src="/UI/images/shoes/women/shoe1.jpg" alt="a cute clothe" >
+                  </div>
+                  <div class="caption-image">CLOTHES</div>
+                </a>
+
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xm-12">
+              <div class="edu-product">
+                <a target="_blank" href="#">
+                  <div class="edu-product__image">
+                    <img src="/UI/images/shoes/women/shoe1.jpg" alt="a cute clothe" >
+                  </div>
+                  <div class="caption-image">CLOTHES</div>
+                </a>
+
+              </div>
+            </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xm-12">
+              <div class="edu-product">
+                <a target="_blank" href="#">
+                  <div class="edu-product__image">
+                    <img src="/UI/images/shoes/women/shoe1.jpg" alt="a cute clothe" >
+                  </div>
+                  <div class="caption-image">CLOTHES</div>
+                </a>
+
+              </div>
+            </div>
+          </div>          
         </div>
         <!--footersection-->
         <div class="footer">
-            <div><a href="#">FAQs</a></div>
-            <div><a href="#">CONTACT US</a></div>
-            <div><a href="#">ABOUT US</a></div>
-            <div><a href="#">ADDRESS</a></div>
+          <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xm-6">
+              <div class="navbar-brand__logo">
+                <img id ="logo" src="/UI/images/logo.png">
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xm-6">
+              <h4>Quick Links</h4>
+              <ul class="footer__links">
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Store Location</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xm-6">
+              <h4>Follow us</h4>
+              <ul class="footer__media">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+              </ul>
+            </div>
+            </div>
+          </div>
 
-        </div>            
+
+        </div> 
+        <script src="/UI/script/bootstrap.min.js"></script>
+        <script src="/UI/script/slick.min.js"></script>
+        <script src="/UI/script/script.js"></script>
     </body>
-    <script src="/UI/script/script.js"></script>
+
     </html>

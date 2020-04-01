@@ -1,123 +1,73 @@
 body{
     font-family: SeoulHangang;
 }
-.nav-bar {
-    display: flex;
-    background-color: #c9485b;
-    height:150px;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    opacity:100%;
-      
-}
 
-a:hover{
-    color:honeydew;
+.navbar-brand__logo{
+    height: 50px;
+}
+.edu-header {
+    background: #f8f9fa;
+}
+.jumbotron.jumbotron-fluid {
+    padding: 0;
+}
+.edu-product {
+    padding: 20px 5px;
+}
+.edu-product__image img {
+
+    width: 100%;
+
 } 
 #logo{
-    height: 200px;
-    width: 200px;
-    position: initial;
-    top: 10px;
-    left: 10px;
+    height: 100%;
    
 }
 
-.footer{
-    display: flex;
-    background-color: #C9485B;
-    height: 150px;
-    width:100%;
-    align-items: center;
-    justify-content: space-around;
-    opacity: 100%;
-    
-    
+.footer {
+
+    background-color: #2a2a2a;
+    padding: 90px 0;
+
 }
-a{
-    color:#1b262c;
-    font-weight: bolder;
+
+.footer h4 {
+
+    color: #fff;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.footer__links, .footer__media {
+
+    list-style: none;
+    padding-left: 0;
+
+}
+.footer__links a, .footer__media a {
+
+    color: #ccc;
+    font-size: 16px;
+
+}
+.footer__links a:hover, .footer__media a:hover {
+
+    color: #fff;
     text-decoration: none;
+
 }
-.dropdowmn{
-    position: relative;
+.footer__media a {
+
+    font-size: 28px;
+
+}
+.footer__media li {
+
     display: inline-block;
-}
-.dropdowmn-content{
-    display: none;
-    position: absolute;
-    z-index: 1;
-    background-color: lightslategray;
-}
-.dropdowmn-content a:hover{
-    background-color: indianred;
-}
-.dropdowmn-content a{
-    display: block;
-    padding: 12px 16px;
-}
-.dropdown:hover .dropdowmn-content{display: block;}
-.dropdown:hover .dropdownbtn{background-color: lightcoral;}
-
-.main{
-    display: grid;
-    height: 400px;
-    padding-top: 20px;
-    grid-template-columns: auto auto;
-    grid-gap: 40px;
-    }
-    
-.slideshow-container img{ 
-    height: 300px; 
-    width: 500px;
-    object-fit: cover;
-             
-}
-.edushop{
-    
-    padding: 10px 10px;
-    opacity: 80%;
-    flex-grow: 1;   
-    font-weight: bolder;
-    font-size: 24pt;
-    background-image: url(/UI/images/es1.jpg);
-    background-size: cover;
-    
-}
-
-.mySlides{display: none;} 
-
-
-div.img {
-    margin: 5px;
-    float: left;
-    width: 300px;
-    background-color: #DCD6F7;
-    opacity: 90%;
-  
-}
-
-div.img:hover {
-    border: 1px solid #000000;
-   
-}
-
-div.img img {
-    width: 100%;
-    height: auto;
-}
-
-div.caption {
-    padding: 15px;
+    width: 40px;
     text-align: center;
-    font-weight: bolder;
-    
-}
-.item-display{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    row-gap: 10px;
-    
-}
+    height: 40px;
+    vertical-align: middle;
 
+}
