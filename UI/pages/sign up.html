@@ -2,37 +2,49 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="widthwidth=device-width, initial-scale=1">
+        <meta name="viewport" content="width=Landing Page, initial-scale=1.0">
         <link rel="stylesheet" href="/UI/css/styles.css"/>
-        
-        <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Eczar|Gentium+Basic|Press+Start+2P|Signika+Negative&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <title>Sign Up</title>
     </head>
-    <body>
+    <body class="body">
         <header class="container-fluid">
             <div class="row">
             <div class="col-sm-4"><a href="#"></a><img src="/UI/images/500.png" alt="edushop logo"></div>
-            <div class="col-sm-6">CATEGORIES</div>
-            <div class="col-sm-1"><a href="#">CART</a></div>
-            <div class="col-sm-1"><a href="/UI/pages/sign in.html">SIGN IN</a></div>
+            <div class="col-sm-6">
+                <div class="dropdown">
+                    <button onclick="myFilter()" class="dropbtn">CATEGORIES</button>
+                    <div id="Dropdown" class="dropdown-content">
+                      <input type="text" placeholder="Search category here..." id="myInput" onkeyup="filterFunction()">
+                      <a href="#">Technology</a>
+                      <a href="#">Gadgets</a>
+                      <a href="#">Women's clothes</a>
+                      <a href="#">Men's clothes</a>
+                      <a href="#">Bags</a>
+                      <a href="#">Jewellery</a>
+                    </div>
+                  </div>
             </div>
+            <div class="col-sm-1"><a href="#">CART</a></div>
+            <div class="col-sm-1"><a href="/UI/pages/sign up.html">SIGN UP</a></div>
+            </div>
+        </header>
         <div class="card">
-            <h1>Create account</h1>
-            <form action="">
+            <h1 id="h1">Create account</h1>
+            <form id="form" action="">
                 <label for="names">Full names</label><br>
                 <input type="text" id="names" name="names" required ><br>
-                <label for="email" for="number">Email or phone number</label><br>
+                <label for="email">Email</label><br>
                 <input type="email" type="number" id="emailid" name="email or number" required><br>
                 <label for="password">Password</label><br>
                 <input type="password" id="password" name="password" required><br>
-                <label for="confirm password">confirm Password</label><br>
+                <label for="confirm password">Confirm password</label><br>
                 <input type="password" id="cpassword" name="confirm password" required ><br>
-                <input type="submit" onclick="createAccount()" value="SIGN UP">
+                <input type="submit" onclick="addTo()" value="SIGN UP">
                 <br><br>
-                <p>Already have an account? <a href="/UI/pages/sign in.html"> Sign in</a></p>
+                <p id="p">Already have an account? <a href="/UI/pages/sign in.html"> Sign in</a></p>
             </form>
         </div>
         <br>
