@@ -3,15 +3,13 @@ body{
 }
 .nav-bar {
     display: flex;
-    background-color: #A84747;
+    background-color: #c9485b;
     height:150px;
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    opacity: 100%;
-    
-
-   
+    opacity:100%;
+      
 }
 
 a:hover{
@@ -28,7 +26,7 @@ a:hover{
 
 .footer{
     display: flex;
-    background-color: #A84747;
+    background-color: #C9485B;
     height: 150px;
     width:100%;
     align-items: center;
@@ -62,28 +60,30 @@ a{
 .dropdown:hover .dropdowmn-content{display: block;}
 .dropdown:hover .dropdownbtn{background-color: lightcoral;}
 
-
-.slideshow-container{
-    width: 100%;
-    text-align: center;
-    background-color:#C59F9F;
-    opacity: 100%;
+.main{
+    display: grid;
+    height: 400px;
+    padding-top: 20px;
+    grid-template-columns: auto auto;
+    grid-gap: 40px;
+    }
     
-}
-.slideshow-container img{
-    width: 900px;
-    height: 500px;
-    margin-left: auto;
-    margin-right:auto;
-    
-        
+.slideshow-container img{ 
+    height: 300px; 
+    width: 500px;
+    object-fit: cover;
+             
 }
 .edushop{
-    height: 200px;
-    text-align: center;
+    
     padding: 10px 10px;
-    background-color: #C59F9F;
     opacity: 80%;
+    flex-grow: 1;   
+    font-weight: bolder;
+    font-size: 24pt;
+    background-image: url(/UI/images/es1.jpg);
+    background-size: cover;
+    
 }
 
 .mySlides{display: none;} 
@@ -93,8 +93,7 @@ div.img {
     margin: 5px;
     float: left;
     width: 300px;
-    height: 100%;
-    background-color: #c9485b;
+    background-color: #DCD6F7;
     opacity: 90%;
   
 }
@@ -116,8 +115,9 @@ div.caption {
     
 }
 .item-display{
-    display: flex;
-    background-color:#C59F9F;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 10px;
     
 }
 
