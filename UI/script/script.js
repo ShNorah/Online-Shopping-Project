@@ -67,6 +67,7 @@ function myFilter() {
           }
         }
       }
+      
  function signIn() {
         let userEmail = document.getElementById("email").value;
         let userPassword = document.getElementById("password").value;
