@@ -21,13 +21,18 @@ header {
 }
 
 img {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     margin: auto;
-    margin-left: -10px;
+    /*margin-left: -10px;
     margin-right: 0px;
-    padding-right: 20px;
+    padding-right: 20px;*/
 }
+
+.row {
+  padding: 20px;
+}
+
 p {
     text-align: center;
 }
@@ -44,7 +49,6 @@ a:visited {
     text-decoration: none;
   }
 
- 
 .btn {
     background-color: #c9485b;
     border-radius: 3px;
@@ -56,7 +60,7 @@ a:visited {
     font-size: 18px;
     font-weight: bold;
     box-shadow: 0 1px 1px 0 black;
-    width: 160px;
+    width: 300px;
 }
 
 .container {
@@ -65,14 +69,14 @@ a:visited {
     font-size: 16px;
 }
 
-  .topnav {
+.topnav {
     overflow: hidden;
     background-color: #c9485b;
     padding-bottom: 30px;
     padding-top: 30px;
   }
   
-  .topnav a {
+.topnav a {
     float: right;
     display: block;
     color: black;
@@ -82,7 +86,7 @@ a:visited {
     font-size: 17px;
   }
   
-  .logo {
+.logo {
     margin-left: -20px;
     height: 400px;
     padding-bottom: 0px;
@@ -90,7 +94,7 @@ a:visited {
     margin-top: -200px;
   }
   
-  .topnav input[type=text] {
+.topnav input[type=text] {
     width: 30%;
     padding: 6px;
     margin-top: 8px;
@@ -101,8 +105,8 @@ a:visited {
     
   }
   
-  @media screen and (max-width: 600px) {
-    .topnav a, .topnav input[type=text] {
+@media screen and (max-width: 600px) {
+   .topnav a, .topnav input[type=text] {
       float: none;
       display: block;
       text-align: left;
@@ -115,58 +119,3 @@ a:visited {
       border: 1px solid #ccc;  
     }
 }
-
-.dropbtn {
-    background-color: #c9485b;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-  }
-  
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #c9485b;
-  }
-  
-  #myInput {
-    box-sizing: border-box;
-    background-position: 14px 12px;
-    background-repeat: no-repeat;
-    font-size: 16px;
-    padding: 14px 20px 12px 45px;
-    border: none;
-    border-bottom: 1px solid #DCD6F7;
-  }
-  
-  #myInput:focus {outline: 3px solid #DCD6F7;}
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    font-size: 20px;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #DCD6F7;
-    min-width: 230px;
-    overflow: auto;
-    z-index: 1;
-    border-radius: 3px;
-    border-width: 1px;
-    border-color: black;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    border-width: 1px;
-  }
-  
-  .dropdown a:hover {background-color: #DCD6F7;}
-  
-  .show {display: block;}
