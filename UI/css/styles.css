@@ -94,7 +94,7 @@ header {
 footer {
     background-color: #c9485b;
     font-family: 'Gotu', sans-serif;
-    height: 100px;
+    height: 200px;
     font-size: 18px;
     text-align: center;
     padding-top: 35px;
@@ -115,9 +115,6 @@ a:visited {
     background-color: transparent;
     text-decoration: none;
   }
-
-
-
 
 @media scren and (max-width: 1270px) {
     header {
