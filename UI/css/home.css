@@ -1,186 +1,94 @@
 body{
     font-family: SeoulHangang;
 }
-.nav-bar {
-    display: flex;
-    background-color: #c9485b;
-    height:150px;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    opacity:100%;
-      
-}
 
-a:hover{
-    color:honeydew;
+.navbar-brand__logo{
+    height: 50px;
+}
+.edu-header {
+    background: #c9485b;;
+    height:100px;
+    font-weight: bolder;
+    font-size: 14pt;
+    opacity: 100%;
+    padding: 10px 15px;
+}
+.searchbar{
+    border-radius: 10em;
+    height: 40px;
+    width: 400px;
+    text-align: center;
+    font-weight: bolder;
+}
+.jumbotron.jumbotron-fluid {
+    padding: 0;
+}
+.edu-product {
+    padding: 20px 5px;
+}
+.edu-product__image img {
+
+    width: 100%;
+
 } 
 #logo{
-    height: 200px;
-    width: 200px;
-    position: initial;
-    top: 10px;
-    left: 10px;
+    height: 100%;
    
 }
-
-.footer{
-    display: flex;
-    background-color: #C9485B;
-    height: 150px;
-    width:100%;
-    align-items: center;
-    justify-content: space-around;
-    opacity: 100%;
-    
-    
-}
-a{
-    color:#1b262c;
-    font-weight: bolder;
+.edu-product a{
     text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 14pt;
+    text-align: center;
 }
-.dropdowmn{
-    position: relative;
+.edu-product-description{
+
+}
+.footer {
+
+    background-color: #2a2a2a;
+    padding: 90px 0;
+
+}
+
+.footer h4 {
+
+    color: #fff;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.footer__links, .footer__media {
+
+    list-style: none;
+    padding-left: 0;
+
+}
+.footer__links a, .footer__media a {
+
+    color: #ccc;
+    font-size: 16px;
+
+}
+.footer__links a:hover, .footer__media a:hover {
+
+    color: #fff;
+    text-decoration: none;
+
+}
+.footer__media a {
+
+    font-size: 28px;
+
+}
+.footer__media li {
+
     display: inline-block;
-}
-.dropdowmn-content{
-    display: none;
-    position: absolute;
-    z-index: 1;
-    background-color: lightslategray;
-}
-.dropdowmn-content a:hover{
-    background-color: indianred;
-}
-.dropdowmn-content a{
-    display: block;
-    padding: 12px 16px;
-}
-.dropdown:hover .dropdowmn-content{display: block;}
-.dropdown:hover .dropdownbtn{background-color: lightcoral;}
-
-.main{
-    display: grid;
-    height: 400px;
-    padding-top: 20px;
-    grid-template-columns: auto auto;
-    grid-gap: 40px;
-    }
-    
-.slideshow-container img{ 
-    height: 300px; 
-    width: 500px;
-    object-fit: cover;
-             
-}
-.edushop{
-    
-    padding: 10px 10px;
-    opacity: 80%;
-    flex-grow: 1;   
-    font-weight: bolder;
-    font-size: 24pt;
-    background-image: url(/UI/images/es1.jpg);
-    background-size: cover;
-    
-}
-
-.mySlides{display: none;} 
-
-
-div.img {
-    margin: 5px;
-    float: left;
-    width: 300px;
-    background-color: #DCD6F7;
-    opacity: 90%;
-  
-}
-
-div.img:hover {
-    border: 1px solid #000000;
-   
-}
-
-div.img img {
-    width: 100%;
-    height: auto;
-}
-
-div.caption {
-    padding: 15px;
+    width: 40px;
     text-align: center;
-    font-weight: bolder;
-    
+    height: 40px;
+    vertical-align: middle;
+
 }
-.item-display{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    row-gap: 10px;
-    
-}
-/*style for itempage */
-.items{
-    display: flex;
-    justify-content: space-around;
-    height: 400px;
-    padding: 10px 10px;
-}
-div .item{
-    display: flex;
-   flex-grow: 1;
-   justify-content: center;
-    
-}
- 
-div .description{
-    flex-grow: 2;
-    background-color: #DCD6F7;
-    align-items: center;
-    text-align: center;
-}
- div.buy{
-    display: flex;
-    justify-content: space-around;
-}
-div #buy{
-    display: flex;
-}
-div #buy button{
-    background-color: #C9485B;
-    width: 200px;
-}
- .item-options{
-     display: grid;
-     grid-template-columns: auto auto auto auto;
-     column-gap: 10px;
- }
- .options img{
-     height: 350px;
-     width: 300px;
- }
- .options button{
-     border-radius: 0.2em;
-     border: 1px solid;
-     background-color: #DCD6F7;
-     height: 50px;
-     width: 150px;
-     
- }
- button:hover{
-     color: #c9485b;
- }
- .searchbar{
-     display: flex;
-     border-radius: 10em;
-     height: 40px;
- }
- .search{
-     width: 400px;
- }
- /*table styles*/
- td th{
-     border: 1px solid;
-     
- }

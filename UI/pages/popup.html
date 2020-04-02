@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head><title>poppform</title></head>
+    <body>
+        <!--popup div-->
+        <div id="pop">
+        <div id="popupContact">
+            <!--orderform-->
+            <form  action="#" id="form" method="post" name="form">
+                <h2>Order now</h2><hr>
+                <input id="name" name="name" placeholder="Name" type="text"><br>
+                <input id="email" name="name" placeholder="Email" type="text"><br>
+                <input id="phonenumber" name="name" placeholder="PhoneNumber" type="text"><br>
+                <textarea id="msg" name="message" placeholder="Message"></textarea><br>
+                <a href="javascript:%check_empty()" id="submit">SEND</a>
+            </form>
+        </div>
+        </div>
+        <button id="popup" onclick="divshow()">popup</button>
+    <!--script for the popup-->
+        <script>
+//Validating empty field
+function check_empty(){
+    if (document.getElementById("name").value =="" || document.getElementById("email").value==""||
+    document.getElementById("msg").value=="" ||document.getElementById("phonenumber").value==""){
+        alert("fill all the form fields")
+    }else{document.getElementById("form").submit();
+    alert("order form submitted successfuly")
+}
+}
+//function to display 
+function div_show(){
+    document.getElementById("pop").style.display ="block";
+}
+//function to hide
+function div_hide(){
+    document.getElementById("pop").style.display ="none";
+}
+        </script>
+    </body>
+</html>
+                
+                
+
+
+
+
+        
+
+        
+   
+        

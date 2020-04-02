@@ -1,14 +1,16 @@
-var myIndex=0;
-slideShow();
+jQuery(document).ready(function(){
+    $('.slideshow-container').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        speed: 300,
+    });
 
-function slideShow(){
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for(i=0; i<x.length; i++){
-        x[i].style.display = "none";
-}
-myIndex++;
-if (myIndex > x.length){myIndex = 1}
-x[myIndex-1].style.display = "block"; 
-setTimeout(slideShow, 2000)  //slideshow change time
-}
+});
+
+//searching an item
+document.addEventListener( "DOMContent Loaded", function(){
+    const list =document.querySelector("#item-container")
+})
+
+
