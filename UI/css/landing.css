@@ -1,0 +1,121 @@
+footer {
+    background-color: #c9485b;
+    font-family: 'Gotu', sans-serif;
+    height: 200px;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 35px;
+}
+
+header {
+    width: auto;
+    background-color: #c9485b;
+    font-family: 'Gotu', sans-serif;
+    height: 150px;
+    padding: 16px;
+    font-size: 16px;
+}
+
+.body {
+    background-color: #DCD6F7;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    /*margin-left: -10px;
+    margin-right: 0px;
+    padding-right: 20px;*/
+}
+
+.row {
+  padding: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+.btn {
+    background-color: #c9485b;
+    border-radius: 3px;
+    border: 0px;
+    padding: 2%;
+    margin-top: 12px;
+    background-color: #c9485b;
+    font-family: 'Gotu', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 1px 1px 0 black;
+    width: 300px;
+}
+
+.container {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    font-size: 16px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #c9485b;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  
+.topnav a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+.logo {
+    margin-left: -20px;
+    height: 400px;
+    padding-bottom: 0px;
+    margin-bottom: -100px;
+    margin-top: -200px;
+  }
+  
+.topnav input[type=text] {
+    width: 30%;
+    padding: 6px;
+    margin-top: 8px;
+    margin-left: 400px;
+    border: none;
+    font-size: 17px;
+    border-radius: 50px;
+    
+  }
+  
+@media screen and (max-width: 600px) {
+   .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    
+    .topnav input[type=text] {
+      border: 1px solid #ccc;  
+    }
+}
