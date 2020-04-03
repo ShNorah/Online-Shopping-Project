@@ -1,5 +1,5 @@
 .card {
-    box-shadow: 0 0px 4px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 0px 4px 0 rgba(0,0,0,0.2);
   width: 30%;
   background-color: white;
   font-family: 'Gotu', sans-serif;
@@ -7,8 +7,8 @@
   float: none;
   margin: auto;
   border-radius: 3px;
-  padding-bottom: 70px;
-  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-top: 10px;
   margin-top: 10px;
  
 }
@@ -73,7 +73,7 @@ input[type= submit]:hover {
     text-align: left;
 }
 
-img {
+header img {
     margin-left: -20px;
     height: 400px;
     padding-bottom: 0px;
@@ -97,7 +97,8 @@ footer {
     height: 200px;
     font-size: 18px;
     text-align: center;
-    padding-top: 35px;
+    padding-top: 55px;
+    padding-bottom: 0px;
 }
 
 .body {
@@ -119,12 +120,16 @@ a:visited {
 @media scren and (max-width: 1270px) {
     header {
       font-size: 14px;
+      height: auto;
       }
   }
 
 @media screen and (max-width:700px) {
   .card {
     width: 60%;
+    }
+    header {
+        height: auto;
     }
     
 }

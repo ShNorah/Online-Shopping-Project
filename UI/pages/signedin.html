@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/UI/css/landing.css"/>
+        <link rel="stylesheet" href="/UI/css/signedin.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -11,13 +11,25 @@
     <title>signed in user</title>
 </head>
 <body class="body">
-    <div class="topnav">
-        <div class="logo"><a href="#"><img src="/UI/images/500.png" alt="edushop logo"></a></div>
-        <input type="text" placeholder="Search items here..." id="searchbar">
-        <a href="#">ACCOUNT</a>
-        <a href="#">CART</a>
-        
-      </div>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3"><a href="/UI/pages/signedin.html"><img src="/UI/images/500.png" alt="logo"></a></div>
+                <div class="col-sm-7"><input type="text" placeholder="Search items here..." id="searchbar"></div>
+                <div class="col-sm-1" id="cart"><a href="/UI/pages/item.html">CART</a></div>
+                <div class="col-sm-1">
+                    <div class="dropdown">
+                    <span>ACCOUNT</span>
+                        <div class="dropdown-content">
+                            <a href="#">Profile</a><hr>
+                            <a href="#">Settings</a><hr>
+                            <a href="/index.html">Sign out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </header>
     <br>
     <div class="container">

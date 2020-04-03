@@ -1,5 +1,5 @@
 body{
-    font-family: SeoulHangang;
+    font-family: 'Gotu', sans-serif;
 }
 
 .navbar-brand__logo{
@@ -15,6 +15,7 @@ body{
 }
 .searchbar{
     border-radius: 10em;
+    border: none;
     height: 40px;
     width: 400px;
     text-align: center;
@@ -43,7 +44,7 @@ body{
     text-decoration: none;
     color: black;
     font-weight: bolder;
-    font-size: 14pt;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -96,4 +97,40 @@ body{
 }
 #dialog-form{
     display: none;
+}
+
+
+
+button {
+    background-color: #c9485b;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    padding: 2%;
+    box-shadow: 0 0px 4px 0 rgba(0,0,0,0.2);
+    width: 200px;
+}
+
+.dropdown {
+    margin-top: 9px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #DCD6F7;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+body {
+    background-color: #DCD6F7;
 }

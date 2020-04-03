@@ -3,24 +3,26 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=Landing Page, initial-scale=1.0">
-        <link rel="stylesheet" href="/UI/css/styles.css"/>
+        <link rel="stylesheet" href="/UI/css/sign.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <title>Sign Up</title>
     </head>
     <body class="body">
-        <header class="container-fluid">
+        <header>
+            <div class="container-fluid">
             <div class="row">
-            <div class="col-sm-4"><a href="#"></a><img src="/UI/images/500.png" alt="edushop logo"></div>
-            </div>
+            <div class="col-sm-10"><a href="/index.html"><img src="/UI/images/500.png" alt="logo"></a></div>
             <div class="col-sm-1"><a href="#">CART</a></div>
             <div class="col-sm-1"><a href="/UI/pages/sign in.html">SIGN IN</a></div>
+            </div>
             </div>
         </header>
         <div class="card">
             <h1 id="h1">Create account</h1>
-            <form id="form" onsubmit="return validate()" action="index.html">
+            <form id="form" onsubmit="return validate()" action="/UI/pages/signedin.html">
                 <label for="uname">Username</label><br>
                 <input type="text" id="uname" name="uname" required><br>
                 <label for="email">Email</label><br>
@@ -42,5 +44,5 @@
         </footer> 
     </body>
     <script src="/UI/script/script.js"></script>
->>>>>>> develop
+
 </html>
