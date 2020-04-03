@@ -22,7 +22,7 @@ function signIn() {
         let userPassword = document.getElementById("password").value;
     
         let email = ["sam@gmail.com","munanura@gmail.com"];
-        let paswrd = ["hhh", "ggg"];
+        let paswrd = ["hhhhhh", "gggggg"];
     
         for(let i = 0; i < email.length; i++) {
             if (userEmail == email[i] && userPassword == paswrd[i]) {

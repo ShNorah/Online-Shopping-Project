@@ -1,5 +1,5 @@
 body{
-    font-family: SeoulHangang;
+    font-family: 'Gotu', sans-serif;
 }
 
 .navbar-brand__logo{
@@ -15,6 +15,7 @@ body{
 }
 .searchbar{
     border-radius: 10em;
+    border: none;
     height: 40px;
     width: 400px;
     text-align: center;
@@ -43,7 +44,7 @@ body{
     text-decoration: none;
     color: black;
     font-weight: bolder;
-    font-size: 14pt;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -97,6 +98,10 @@ body{
 #dialog-form{
     display: none;
 }
+
 .edushopitems{
     height: 100vh;
-}
+
+
+
+
