@@ -1,5 +1,5 @@
 body{
-    font-family: SeoulHangang;
+    font-family: 'Gotu', sans-serif;
 }
 
 .navbar-brand__logo{
@@ -13,6 +13,14 @@ body{
     opacity: 100%;
     padding: 10px 15px;
     color: black; 
+}
+.searchbar{
+    border-radius: 10em;
+    border: none;
+    height: 40px;
+    width: 400px;
+    text-align: center;
+    font-weight: bolder;
 }
 .jumbotron.jumbotron-fluid {
     padding: 0;
@@ -51,6 +59,10 @@ body{
 .slideshow-container {
     height: 500px;
 }
+.jumbotron .slick-list.draggable {
+    height: 700px;
+}
+
 .edu-product {
     padding: 20px 5px;
 }
@@ -67,9 +79,10 @@ body{
     text-decoration: none;
     color: black;
     font-weight: bolder;
-    font-size: 14pt;
+    font-size: 14px;
     text-align: center;
 }
+
 .footer {
 
     background-color: #2a2a2a;
@@ -117,3 +130,13 @@ body{
     vertical-align: middle;
 
 }
+#dialog-form{
+    display: none;
+}
+
+.edushopitems{
+    height: 100vh;
+
+}
+
+

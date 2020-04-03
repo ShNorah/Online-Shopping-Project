@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>item</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/UI/css/bootstrap.min.css"/>    
+    <link rel="stylesheet" href="/UI/css/slick.css"/>  
+    <link rel="stylesheet" href="/UI/css/slick-theme.css"/> 
+    <link href="../UI/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet"> <!--load all styles -->     
+    <link rel="stylesheet" href="/UI/css/index.css"/>
+    <link href="/UI/pages/popup.html">
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body>
+
+     <div class="edu-header">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+          <a class="navbar-brand" href="#">
+            <div class="navbar-brand__logo">
+              <a href="/UI/pages/signedin.html"><img id ="logo" src="/UI/images/logo.png"></a>
+            </div>
+            </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">OFFICE<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SPORTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CASUAL</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav my-2 my-lg-0">
+                <li class="nav-item" >
+                    <input class="searchbar"type="text" placeholder="Search item..." name="search" >
+                    <button id="searchicon" type="submit"><i class="fas fa-search"></i></button>                               
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/UI/pages/cart.html">Cart</a>
+                  </li>
+              <li class="nav-item">
+<<<<<<< HEAD
+                <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/UI/pages/sign in.html">Profile</a>
+              </li>
+=======
+                <div class="dropdown">
+                  <span>ACCOUNT</span>
+                      <div class="dropdown-content">
+                          <a href="#">Profile</a><hr>
+                          <a href="#">Settings</a><hr>
+                          <a href="/index.html">Sign out</a>
+                      </div>
+                  </div>              
+                </li>
+>>>>>>> 49f79cdbc4f78ec358f2eb7d661f4b199c7de0f1
+            </ul>
+          </div>
+        </nav>
+        </div>
+        
+        <div class="container" id="item-container">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="edu-product">
+                  <a target="_blank" href="#">
+                    <div class="edu-product__image">
+                      <img src="/UI/images/shoes/shoe4.jpg" alt="a cute shoe" >
+                    </div>
+                    <div class="caption-image">Shoes</div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="table" class="edu-product-description">
+                    <table class="table-dark">
+                        <thead>
+                        <tr>
+                            <th><p>Item</p></th>
+                            <th><p>Description</p></th>
+                            <th><p>Quantity</p></th>
+                            <th><p>Time of Arrival</p></h3></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SHOE</td>
+                            <td>Ladies Office Shoe</td>
+                            <td>1</td>
+                            <td>24 HOURS</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <div><button id="popup">BUY NOW</button></div>                      
+                </div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div><p>You may also like...</p></div>
+                </div>
+        </div>
+        
+        <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="edu-product">
+            <a target="_blank" href="#">
+              <div class="edu-product__image">
+                <img src="/UI/images/shoes/shoe1.jpg" alt="a cute shoe">
+              </div>
+              <div class="caption-image"><button>VIEW MORE</button></div>
+            </a>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="edu-product">
+            <a target="_blank" href="#">
+              <div class="edu-product__image">
+                <img src="/UI/images/shoes/shoe1.jpg" alt="a cute shoe">
+              </div>
+              <div class="caption-image"><button>VIEW MORE</button></div>
+            </a>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="edu-product">
+            <a target="_blank" href="#">
+              <div class="edu-product__image">
+                <img src="/UI/images/shoes/shoe1.jpg" alt="a cute shoe">
+              </div>
+              <div class="caption-image"><button>VIEW MORE</button></div>
+            </a>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="edu-product">
+            <a target="_blank" href="#">
+              <div class="edu-product__image">
+                <img src="/UI/images/shoes/shoe1.jpg" alt="a cute shoe">
+              </div>
+              <div class="caption-image"><button>VIEW MORE</button></div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+         <div class="footer">
+            <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                <div class="navbar-brand__logo">
+                  <img id ="logo" src="/UI/images/logo.png">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                <h4>Quick Links</h4>
+                <ul class="footer__links">
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Store Location</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                <h4>Follow us</h4>
+                <ul class="footer__media">
+                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+              </div>
+              </div>
+            </div>
+  
+  
+          </div> 
+
+          <div id="dialog-form" title="Order Now">
+            <form  action="#" id="form" method="post" name="form">
+              <div class="form-group row">
+                <input class="form-control" name="name" placeholder="Name" type="text"><br>
+              </div>
+              <div class="form-group row">
+                <input class="form-control" name="email" placeholder="Email" type="text"><br>
+              </div>
+              <div class="form-group row">
+                <input class="form-control" name="phonenumber" placeholder="PhoneNumber" type="text"><br>
+              </div>
+              <div class="form-group row">
+                <textarea class="form-control" name="message" placeholder="Message"></textarea><br>
+              </div>
+
+              <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+            </form>
+        </div>
+          <script src="/UI/script/bootstrap.min.js"></script>
+          <script src="/UI/script/slick.min.js"></script>
+          <script src="/UI/script/script.js"></script>
+
+</body>
+</html>
