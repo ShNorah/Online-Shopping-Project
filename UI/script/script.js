@@ -77,6 +77,8 @@ jQuery(document).ready(function(){
 //searching an item
 document.addEventListener( "DOMContent Loaded", function(){
     const list =document.querySelector("#item-container")
+
+  
 })
 
 
