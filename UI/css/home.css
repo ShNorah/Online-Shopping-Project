@@ -97,3 +97,6 @@ body{
 #dialog-form{
     display: none;
 }
+.edushopitems{
+    height: 100vh;
+}
