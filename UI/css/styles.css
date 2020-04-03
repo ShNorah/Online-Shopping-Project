@@ -7,10 +7,19 @@
   float: none;
   margin: auto;
   border-radius: 3px;
-  padding-bottom: 70px;
+  padding-bottom: 20px;
   padding-top: 20px;
   margin-top: 10px;
  
+}
+
+.navbar-brand__logo{
+    height: 50px;
+}
+
+#logo{
+    height: 100%;
+   
 }
 
 #h1 {
@@ -73,13 +82,6 @@ input[type= submit]:hover {
     text-align: left;
 }
 
-img {
-    margin-left: -20px;
-    height: 400px;
-    padding-bottom: 0px;
-    margin-bottom: -100px;
-    margin-top: -200px;
-}
 
 header {
     margin-top: -20px;
@@ -151,59 +153,51 @@ a:visited {
     }
 }
 
-.dropbtn {
-    background-color: transparent;
-    color: black;
-    padding: 16px;
+
+  .footer {
+      font-family: 'Gotu', sans-serif;
+    background-color: #2a2a2a;
+    padding: 90px 0;
+
+}
+
+.footer h4 {
+
+    color: #fff;
+    text-align: left;
     font-size: 18px;
-    cursor: pointer;
-    border: none;
-    font-family: 'Gotu', sans-serif;
-  }
-  
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #c9485b;
-  }
-  
-  #myInput {
-    box-sizing: border-box;
-    background-position: 14px 12px;
-    background-repeat: no-repeat;
+    font-weight: bold;
+
+}
+.footer__links, .footer__media {
+
+    list-style: none;
+    padding-left: 0;
+
+}
+.footer__links a, .footer__media a {
+
+    color: #ccc;
     font-size: 16px;
-    padding: 14px 20px 12px 45px;
-    border: none;
-    border-bottom: 1px solid #DCD6F7;
-  }
-  
-  #myInput:focus {outline: 3px solid #DCD6F7;}
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    width: 60%;
-    font-size: 20px;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #DCD6F7;
-    min-width: 230px;
-    overflow: auto;
-    z-index: 1;
-    border-radius: 3px;
-    border-width: 1px;
-    border-color: black;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+
+}
+.footer__links a:hover, .footer__media a:hover {
+
+    color: #fff;
     text-decoration: none;
-    display: block;
-    border-width: 1px;
-  }
-  
-  .dropdown a:hover {background-color: #DCD6F7;}
-  
-  .show {display: block;}
+
+}
+.footer__media a {
+
+    font-size: 28px;
+
+}
+.footer__media li {
+
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    height: 40px;
+    vertical-align: middle;
+
+}
