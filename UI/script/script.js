@@ -8,7 +8,7 @@ jQuery(document).ready(function(){
 
         var dialog, form,
      
-          // From http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html#e-mail-state-%28type=email%29
+          // validating user input
           emailRegex = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
           name = $( "#name" ),
           email = $( "#email" ),
@@ -39,10 +39,12 @@ jQuery(document).ready(function(){
           var valid = true;
           allFields.removeClass( "ui-state-error" );      
             console.log('yes');
+            alert("thank you, your order has been initiated, click ok to proceed");
+            window.location.href = "/UI/pages/order.html";
             dialog.dialog({
                 close: function() { 
-                    console.log('no');
-                    window.location.href = "UI/pages/thankyou.html"; }
+                    console.log('no');                    
+                   }
             });
         }
      
@@ -55,6 +57,7 @@ jQuery(document).ready(function(){
             "Make Order": orderNow,
             Cancel: function() {
               dialog.dialog( "close" );
+              alert("sorry, your order has been cancelled");
             }
           },
           close: function() {
