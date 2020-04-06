@@ -13,6 +13,7 @@ body{
     font-size: 14pt;
     opacity: 100%;
     padding: 10px 15px;
+    color: black; 
 }
 .searchbar{
     border-radius: 10em;
@@ -23,6 +24,40 @@ body{
 }
 .jumbotron.jumbotron-fluid {
     padding: 0;
+}
+
+.jumbotron h1 {
+    padding: 15%;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.jumbotron .slick-dots li button:before {
+    font-size: 48px;
+}
+.edu-banner__welcome{
+    height: 500px;
+    background-image: url('/UI/images/casual-banner-shoe.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.edu-banner__promotions{
+    height: 500px;
+    background-image: url('/UI/images/office-banner-shoe.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.edu-banner__stores{
+    height: 500px;
+    background-image: url('/UI/images/sports-banner-shoe.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.slideshow-container {
+    height: 500px;
 }
 .jumbotron .slick-list.draggable {
     height: 700px;
@@ -99,6 +134,7 @@ body{
     display: none;
 }
 
+<<<<<<< HEAD
 .dropdown {
     margin-top: 9px;
     position: relative;
@@ -119,3 +155,11 @@ body{
   .dropdown:hover .dropdown-content {
     display: block;
   }
+=======
+.edushopitems{
+    height: 100vh;
+
+}
+
+
+>>>>>>> origin/ft-home-page-172001308
