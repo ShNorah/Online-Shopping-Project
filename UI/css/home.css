@@ -81,6 +81,13 @@ body{
 .edu-product__image img {
     width: 100%;
 } 
+.edu-product__image {
+    height: 350px;
+}
+.container .edu-product__image img {
+    height: 100%;
+    width: 100%;
+}
 
 #logo{
     height: 100%;
