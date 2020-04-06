@@ -4,25 +4,28 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=Landing Page, initial-scale=1.0">
         <link rel="stylesheet" href="/UI/css/styles.css"/>
+        <link rel="stylesheet" href="/UI/css/home.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
+        <link href="/UI/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet"> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <title>Sign Up</title>
     </head>
-    <body class="body">
-        <header class="container-fluid">
+    <body class="main-section">
+      <!--header section-->
+     <header class="container-fluid">
             <div class="row">
             <div class="col-sm-10">
                 <div class="navbar-brand__logo">
                 <a href="/index.html"><img id ="logo" src="/UI/images/logo.png"></a>
               </div>
             </div>
-            <div class="col-sm-1"><a href="#">CART</a></div>
-            <div class="col-sm-1"><a href="/UI/pages/sign in.html">SIGNIN</a></div>
+            <div class="col-sm-1"><a href="#">Cart</a></div>
+            <div class="col-sm-1"><a href="/UI/pages/sign in.html">Login</a></div>
             </div>
-        </header>
+          </header>
+           <!--End of header-->
         <div class="card">
             <h1 id="h1">Sign Up</h1>
             <form id="form" onsubmit="return validate()" action="/UI/pages/signeduser.html">
@@ -34,7 +37,7 @@
                 <input type="password" id="password" name="password" required><br>
                 <input type="submit" onsubmit="validate()" value="SIGN UP">
                 <br><br>
-                <p id="p">Already have an account? <a href="/UI/pages/sign in.html"> Sign in</a></p>
+                <p>Already have an account? <a href="/UI/pages/sign in.html"> Sign in</a></p>
             </form>
         </div>
         <br>

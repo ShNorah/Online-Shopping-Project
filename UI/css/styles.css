@@ -77,11 +77,13 @@ input[type= submit]:hover {
     color: antiquewhite;
 }
 
-#p {
+p {
     font-size: 13px;
     text-align: left;
 }
-
+.man-section{
+    background-color: #DCD6F7;
+}
 
 header {
     margin-top: -20px;
@@ -91,19 +93,6 @@ header {
     height: 150px;
     font-size: 18px;
     padding-top: 70px;
-}
-
-footer {
-    background-color: #c9485b;
-    font-family: 'Gotu', sans-serif;
-    height: 200px;
-    font-size: 18px;
-    text-align: center;
-    padding-top: 35px;
-}
-
-.body {
-    background-color: #DCD6F7;
 }
 
 a:link {
