@@ -4,19 +4,15 @@
     <title>cart</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-    
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/UI/css/bootstrap.min.css"/>    
-    <link rel="stylesheet" href="/UI/css/slick.css"/>  
-    <link rel="stylesheet" href="/UI/css/slick-theme.css"/> 
-    <link href="../UI/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet"> <!--load all styles -->     
-    <link rel="stylesheet" href="/UI/css/home.css"/>
-    <link href="/UI/pages/popup.html">
-
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../css/jquery-ui.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/> 
+    <link href="../fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet"> <!--load all styles -->     
+    <link rel="stylesheet" href="../css/home.css"/>
+    <link rel="stylesheet" href="../css/styles.css"/>
 
 </head>
 <body>
@@ -25,7 +21,7 @@
         <nav class="navbar navbar-expand-lg navbar-light container">
           <a class="navbar-brand" href="#">
             <div class="navbar-brand__logo">
-              <img id ="logo" src="/UI/images/logo.png">
+              <img id ="logo" src="../images/logo.png">
             </div>
             </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,106 +46,210 @@
                     <button id="searchicon" type="submit"><i class="fas fa-search"></i></button>                               
                   </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/UI/pages/cart.html">Cart</a>
+                    <a class="nav-link" href="../cart.html">Cart</a>
                   </li>
               <li class="nav-item">
                 <a class="nav-link" href="/index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/UI/pages/sign in.html">Profile</a>
+                <a class="nav-link" href="../sign in.html">Profile</a>
               </li>
             </ul>
           </div>
         </nav>
         </div>
         <!--End of header-->
-        <!--main item section-->
-      
-        <div class="container" id="item-container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div><h2>Cart items(0)</h2></div>
-            </div>
-            </div>
-            <div class="row">      
-              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div class="table" class="edu-product-description">
-                    <table class="table-dark">
-                        <thead>
-                        <tr>
-                            <th><h3>Items</th>
-                            <th><h3>Price</h3></th>
-                            <th><h3>Quantity<h3></th>                      
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>SHOE</td>
-                            <td>UGX 100,000</td>
-                            <td>1</td>                            
-                        </tr>
-                    </tbody>
-                    </table>
-                    <div><button id="popup"><h2>BUY NOW</h2></button></div>                      
+        <main class="edu-main">
+          <div class="container">
+              <div class="row" id="myProduct">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="edu-product">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="product-name row">
+                          <div class="col-ld-4 col-md-4 col-sm-6">
+                            <span>Product Details</span>
+                          </div>
+                          <div class="col-ld-2 col-md-2 col-sm-6">
+                            <span>Price</span>
+                          </div>
+                          <div class="col-ld-2 col-md-2 col-sm-6">
+                            <span>Quantity</span>
+                          </div>
+                          <div class="col-ld-2 col-md-2 col-sm-6">
+                            <span>Total</span>
+                          </div>
+                          <div class="col-ld-2 col-md-2 col-sm-6">
+                            <span>Remove</span>
+                          </div>
+                        </div>
+                        <div class="product-cart row">
+                          <div class="col-ld-4 col-md-4 col-sm-6">
+                            <div class="row">
+                              <div class="product-img col-lg-4 col-md-4 col-sm-4">
+                                <img src="../images/GIZR-WZ65_V3.jpg">
+                              </div>
+                              <div class="display-name col-lg-8 col-md-8 col-sm-8">
+                                <p>Stepper</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-ld-2 col-md-2 col-sm-6">
+                            <div class="display-tc">
+                              <span class="price">100, 000/=</span>
+                            </div>
+                          </div>
+                          <div class="col-ld-2 col-md-2 col-sm-6">
+                            <div class="display-tc">
+                              <input type="text" id="quantity" name="quantity" class="form-control" value="1" min="1" max="100">
+                            </div>
+                          </div>
+                          <div class="col-ld-2 col-md-2 col-sm-6">
+                            <div class="display-tc">
+                              <span class="price">100, 000/=</span>
+                            </div>
+                          </div>
+                          <div class="col-ld-2 col-md-2 col-sm-6">
+                            <div class="display-tc">
+                              <a href="#" class="closed"></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-cart row">
+                          <div class="col-ld-4 col-md-4 col-sm-6">
+                            <div class="row">
+                              <div class="product-img col-lg-4 col-md-4 col-sm-4">
+                                <img src="../images/GIZR-WZ65_V3.jpg">
+                              </div>
+                              <div class="display-name col-lg-8 col-md-8 col-sm-8">
+                                <p>Stepper</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-ld-2 col-md-2 col-sm-6">
+                            <div class="display-tc">
+                              <span class="price">100, 000/=</span>
+                            </div>
+                          </div>
+                          <div class="col-ld-2 col-md-2 col-sm-6">
+                            <div class="display-tc">
+                              <input type="text" id="quantity" name="quantity" class="form-control" value="1" min="1" max="100">
+                            </div>
+                          </div>
+                          <div class="col-ld-2 col-md-2 col-sm-6">
+                            <div class="display-tc">
+                              <span class="price">100, 000/=</span>
+                            </div>
+                          </div>
+                          <div class="col-ld-2 col-md-2 col-sm-6">
+                            <div class="display-tc">
+                              <a href="#" class="closed"></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-cart row">
+                          <div class="col-ld-4 col-md-4 col-sm-6">
+                            <div class="row">
+                              <div class="product-img col-lg-4 col-md-4 col-sm-4">
+                                <img src="../images/GIZR-WZ65_V3.jpg">
+                              </div>
+                              <div class="display-name col-lg-8 col-md-8 col-sm-8">
+                                <p>Stepper</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-ld-2 col-md-2 col-sm-6">
+                            <div class="display-tc">
+                              <span class="price">100, 000/=</span>
+                            </div>
+                          </div>
+                          <div class="col-ld-2 col-md-2 col-sm-6">
+                            <div class="display-tc">
+                              <input type="text" id="quantity" name="quantity" class="form-control" value="1" min="1" max="100">
+                            </div>
+                          </div>
+                          <div class="col-ld-2 col-md-2 col-sm-6">
+                            <div class="display-tc">
+                              <span class="price">100, 000/=</span>
+                            </div>
+                          </div>
+                          <div class="col-ld-2 col-md-2 col-sm-6">
+                            <div class="display-tc">
+                              <a href="#" class="closed"></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-8 col-md-4 col-sm-6">
+                            <span>Total</span>
+                          </div>
+                          <div class="col-lg-2 col-md-2 col-sm-6">
+                            <span>300, 000</span>
+                          </div>
+                          <div class="col-lg-2 col-md-2 col-sm-6">
+                            <a href="../pages/order.html">Check out</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <div><h2>YOU MAY ALSO LIKE</h2></div>
+                  </div>
+                </div>
+          <!--View more products-->
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                  <div class="edu-product">
+                    <a target="_blank" href="#">
+                      <div class="edu-product__image">
+                        <img src="../images/Casual/cas1.jpg" alt="a cute shoe">
+                      </div>
+                      <div class="caption-image"><button>VIEW MORE</button></div>
+                    </a>
+  
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                  <div class="edu-product">
+                    <a target="_blank" href="#">
+                      <div class="edu-product__image">
+                        <img src="../images/Casual/cas4.jpg" alt="a cute shoe">
+                      </div>
+                      <div class="caption-image"><button>VIEW MORE</button></div>
+                    </a>
+  
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                  <div class="edu-product">
+                    <a target="_blank" href="#">
+                      <div class="edu-product__image">
+                        <img src="../images/sports/ss2.jpg" alt="a cute shoe">
+                      </div>
+                      <div class="caption-image"><button>VIEW MORE</button></div>
+                    </a>
+  
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                  <div class="edu-product">
+                    <a target="_blank" href="#">
+                      <div class="edu-product__image">
+                        <img src="../images/sports/ss4.jpg" alt="a cute shoe">
+                      </div>
+                      <div class="caption-image"><button>VIEW MORE</button></div>
+                    </a>
+  
+                  </div>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <div><button type="button">Add</button></div><br><br>
-                <div><button type="button" >Remove</button></div>
-            </div>
-            </div> 
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <div><h3>YOU MAY ALSO LIKE</h3></div>
-                </div>
-            </div>
-        </div>
-        <!--View more products-->
-        <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-          <div class="edu-product">
-            <a target="_blank" href="#">
-              <div class="edu-product__image">
-                <img src="/UI/images/shoes/shoe1.jpg" alt="a cute shoe">
-              </div>
-              <div class="caption-image"><button>VIEW MORE</button></div>
-            </a>
-
           </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-          <div class="edu-product">
-            <a target="_blank" href="#">
-              <div class="edu-product__image">
-                <img src="/UI/images/shoes/shoe1.jpg" alt="a cute shoe">
-              </div>
-              <div class="caption-image"><button>VIEW MORE</button></div>
-            </a>
-
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-          <div class="edu-product">
-            <a target="_blank" href="#">
-              <div class="edu-product__image">
-                <img src="/UI/images/shoes/shoe1.jpg" alt="a cute shoe">
-              </div>
-              <div class="caption-image"><button>VIEW MORE</button></div>
-            </a>
-
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-          <div class="edu-product">
-            <a target="_blank" href="#">
-              <div class="edu-product__image">
-                <img src="/UI/images/shoes/shoe1.jpg" alt="a cute shoe">
-              </div>
-              <div class="caption-image"><button>VIEW MORE</button></div>
-            </a>
-
-          </div>
-        </div>
+        </main>
       </div>
     </div>
     </div>
@@ -164,7 +264,7 @@
             <div class="row">
               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                 <div class="navbar-brand__logo">
-                  <img id ="logo" src="/UI/images/logo.png">
+                  <img id ="logo" src="../images/logo.png">
                 </div>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
@@ -208,9 +308,9 @@
               <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
             </form>
         </div>
-          <script src="/UI/script/bootstrap.min.js"></script>
-          <script src="/UI/script/slick.min.js"></script>
-          <script src="/UI/script/script.js"></script>
+          <script src="./UI/script/bootstrap.min.js"></script>
+          <script src="./UI/script/slick.min.js"></script>
+          <script src="./UI/script/script.js"></script>
 
 </body>
 </html>

@@ -4,165 +4,193 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+        <script src="./UI/css/jquery-ui.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/UI/css/bootstrap.min.css"/>    
-        <link rel="stylesheet" href="/UI/css/slick.css"/>  
-        <link rel="stylesheet" href="/UI/css/slick-theme.css"/> 
-        <link href="UI/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet"> <!--load all styles -->     
-        <link rel="stylesheet" href="/UI/css/home.css"/>
+        <link rel="stylesheet" href="./UI/css/bootstrap.min.css"/>    
+        <link rel="stylesheet" href="./UI/css/slick.css"/>  
+        <link rel="stylesheet" href="./UI/css/slick-theme.css"/> 
+        <link href="./UI/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet"> <!--load all styles -->     
+        <link rel="stylesheet" href="./UI/css/home.css"/>
     </head>
     <body>
         <div class="edu-header">
-        <nav class="navbar navbar-expand-lg navbar-light container">
-          <a class="navbar-brand" href="#">
-            <div class="navbar-brand__logo">
-              <img id ="logo" src="/UI/images/logo.png">
+          <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand" href="#">
+              <div class="navbar-brand__logo">
+                <img id ="logo" src="./UI/images/logo.png">
+              </div>
+              </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Office<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sports</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Casual</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav my-2 my-lg-0 edu-login">
+                <li class="nav-item">
+                  <a class="nav-link" href="./UI/pages/sign-up.html">signup</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./UI/pages/sign-in.html">login</a>
+                </li>
+              </ul>
             </div>
-            </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Office<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sports</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Casual</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav my-2 my-lg-0 edu-login">
-              <li class="nav-item">
-                <a class="nav-link" href="/UI/pages/sign up.html">signup</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/UI/pages/sign in.html">login</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+          </nav>
         </div>
         <!--End of header-->
+        <main class="edu-main">
+            <!--slides section-->
+            <div class="jumbotron jumbotron-fluid">
+              <div class="slideshow-container"> 
+                <div class="edu-banner__welcome">
+                  <h1>Welcome</h1>
+                </div>
+                <div class="edu-banner__promotions">
+                  <h1>50% Off Promotion</h1>
+                </div>
+                <div class="edu-banner__stores">
+                  <h1>Shop at home</h1>
+                </div>
+              </div> 
+          </div>
+          <!--end of slides section-->
+          <!--beginning of main -->
+          <div class="container">
+            <div class="row">      
+              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="edu-product">
+                  <a target="_blank" href="./UI/pages/item.html">
+                    <div class="edu-product__image">
+                      <img src="./UI/images/shoes/off5.jpg" alt="a cute shoe">
+                    </div>
+                    <div class="caption-image">
+                      <h4>Boots</h4>
+                      <p>@ 50,000/=</p>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="edu-product">
+                  <a target="_blank" href="./UI/pages/item.html">
+                    <div class="edu-product__image">
+                      <img src="./UI/images/shoes/off7.jpg" alt="a cuteshoe" >
+                    </div>
+                    <div class="caption-image">
+                      <h4>stellitoes</h4>
+                      <p>@ 80,000/=</p>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="edu-product">
+                  <a target="_blank" href="./UI/pages/item.html">
+                    <div class="edu-product__image">
+                      <img src="./UI/images/shoes/off8.jpg" alt="a cute shoe" >
+                    </div>
+                    <div class="caption-image">
+                      <h4>Pumps</h4>
+                      <p>@ 40,000/=</p>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+                          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="edu-product">
+                  <a target="_blank" href="./UI/pages/item.html">
+                    <div class="edu-product__image">
+                      <img src="./UI/images/shoes/off1.jpg" alt="a cute clothe" >
+                    </div>
+                    <div class="caption-image">
+                      <h4>Party Shoes</h4>
+                      <p>@ 50,000/=</p>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="edu-product">
+                  <a target="_blank" href="./UI/pages/item.html">
+                    <div class="edu-product__image">
+                      <img src="./UI/images/shoes/off5.jpg" alt="a cute shoe">
+                    </div>
+                    <div class="caption-image">
+                      <h4>Boots</h4>
+                      <p>@ 50,000/=</p>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="edu-product">
+                  <a target="_blank" href="./UI/pages/item.html">
+                    <div class="edu-product__image">
+                      <img src="./UI/images/shoes/off7.jpg" alt="a cuteshoe" >
+                    </div>
+                    <div class="caption-image">
+                      <h4>stellitoes</h4>
+                      <p>@ 80,000/=</p>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="edu-product">
+                  <a target="_blank" href="./UI/pages/item.html">
+                    <div class="edu-product__image">
+                      <img src="./UI/images/shoes/off8.jpg" alt="a cute shoe" >
+                    </div>
+                    <div class="caption-image">
+                      <h4>Pumps</h4>
+                      <p>@ 40,000/=</p>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+                          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="edu-product">
+                  <a target="_blank" href="./UI/pages/item.html">
+                    <div class="edu-product__image">
+                      <img src="./UI/images/shoes/off1.jpg" alt="a cute clothe" >
+                    </div>
+                    <div class="caption-image">
+                      <h4>Party Shoes</h4>
+                      <p>@ 50,000/=</p>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+            </div>          
+          </div>
+        </main>
     
-        <!--slides section-->
-        <div class="jumbotron jumbotron-fluid">
-            <div class="slideshow-container"> 
-              <div class="edu-banner__welcome">
-                <h1>Welcome</h1>
-              </div>
-              <div class="edu-banner__promotions">
-                <h1>50% Off Promotion</h1>
-              </div>
-              <div class="edu-banner__stores">
-                <h1>Shop at home</h1>
-              </div>
-            </div> 
-        </div>
-        <!--end of slides section-->
-        <!--beginning of main -->
-        <div class="container">
-          <div class="row">      
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-              <div class="edu-product">
-                <a target="_blank" href="#">
-                  <div class="edu-product__image">
-                    <img src="/UI/images/shoes/off5.jpg" alt="a cute shoe">
-                  </div>
-                  <div class="caption-image">SHOES</div>
-                </a>
 
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-              <div class="edu-product">
-                <a target="_blank" href="#">
-                  <div class="edu-product__image">
-                    <img src="/UI/images/shoes/off7.jpg" alt="a cuteshoe" >
-                  </div>
-                  <div class="caption-image">SHOES</div>
-                </a>
-
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-              <div class="edu-product">
-                <a target="_blank" href="#">
-                  <div class="edu-product__image">
-                    <img src="/UI/images/shoes/off8.jpg" alt="a cute shoe" >
-                  </div>
-                  <div class="caption-image">SHOES</div>
-                </a>
-
-              </div>
-            </div>
-                        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-              <div class="edu-product">
-                <a target="_blank" href="#">
-                  <div class="edu-product__image">
-                    <img src="/UI/images/shoes/off1.jpg" alt="a cute clothe" >
-                  </div>
-                  <div class="caption-image">SHOES</div>
-                </a>
-
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-              <div class="edu-product">
-                <a target="_blank" href="/UI/pages/item.html">
-                  <div class="edu-product__image">
-                    <img src="/UI/images/shoes/shoe4.jpg" alt="a cute shoe" >
-                  </div>
-                  <div class="caption-image">SHOES</div>
-                </a>
-
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-              <div class="edu-product">
-                <a target="_blank" href="#">
-                  <div class="edu-product__image">
-                    <img src="/UI/images/shoes/shoe3.jpg" alt="a cute shoe" >
-                  </div>
-                  <div class="caption-image">SHOES</div>
-                </a>
-
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-              <div class="edu-product">
-                <a target="_blank" href="#">
-                  <div class="edu-product__image">
-                    <img src="/UI/images/shoes/shoe4.jpg" alt="a cute clothe" >
-                  </div>
-                  <div class="caption-image">SHOES</div>
-                </a>
-
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-              <div class="edu-product">
-                <a target="_blank" href="#">
-                  <div class="edu-product__image">
-                    <img src="/UI/images/shoes/shoe3.jpg" alt="a cute clothe" >
-                  </div>
-                  <div class="caption-image">SHOES</div>
-                </a>
-
-              </div>
-            </div>
-          </div>          
-        </div>
   
         <div class="footer">
           <div class="container">
           <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-6 col-xm-6">
               <div class="navbar-brand__logo">
-                <img id ="logo" src="/UI/images/logo.png">
+                <img id ="logo" src="./UI/images/logo.png">
               </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xm-6">
@@ -187,9 +215,9 @@
 
 
         </div> 
-        <script src="/UI/script/bootstrap.min.js"></script>
-        <script src="/UI/script/slick.min.js"></script>
-        <script src="/UI/script/script.js"></script>
+        <script src="./UI/script/bootstrap.min.js"></script>
+        <script src="./UI/script/slick.min.js"></script>
+        <script src="./UI/script/script.js"></script>
     </body>
 
     </html>

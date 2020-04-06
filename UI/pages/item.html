@@ -5,27 +5,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/UI/css/bootstrap.min.css"/>    
-    <link rel="stylesheet" href="/UI/css/slick.css"/>  
-    <link rel="stylesheet" href="/UI/css/slick-theme.css"/> 
-    <link href="/UI/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">  
-    <link rel="stylesheet" href="/UI/css/home.css"/>
-    <link href="/UI/pages/popup.html">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/> 
+    <link href="../fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet"> <!--load all styles -->     
+    <link rel="stylesheet" href="../css/slick.css"/>  
+    <link rel="stylesheet" href="../css/slick-theme.css"/> 
+    <link rel="stylesheet" href="../css/home.css"/>
+    <link rel="stylesheet" href="../css/styles.css"/>
 
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="../script/jquery-ui.js"></script>
 
 </head>
 <body>
      <!--header section-->
+     
      <div class="edu-header">
         <nav class="navbar navbar-expand-lg navbar-light container">
           <a class="navbar-brand" href="#">
             <div class="navbar-brand__logo">
-              <img id ="logo" src="/UI/images/logo.png">
+              <img id ="logo" src="../images/logo.png">
             </div>
             </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,26 +34,23 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
               <li class="nav-item active">
-                <a class="nav-link" href="#">OFFICE<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">office<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">SPORTS</a>
+                <a class="nav-link" href="#">sports</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CASUAL</a>
+                <a class="nav-link" href="#">casual</a>
               </li>
             </ul>
             <ul class="navbar-nav my-2 my-lg-0">
-                <li class="nav-item" >                
-                    <input class="searchbar"type="text" placeholder="Search item.." name="search" onkeyup="myfunction()"id="product">
-                    <button id="searchicon" type="submit"><i class="fas fa-search"></i></button>                               
-                  </li>
+
                 <li class="nav-item">
-                    <a class="nav-link" href="/UI/pages/cart.html">CART</a>
+                    <a class="nav-link" href="./UI/pages/cart.html">cart</a>
                   </li>
               <li class="nav-item">
                 <div class="dropdown">
-                  <span>PROFILE</span>
+                  <span>profile</span>
                   <div class="dropdown-content">
                   <a href="">Account</a><hr>
                   <a href="#">Settings</a><hr>
@@ -62,101 +58,142 @@
                   </div>
                 </div>
               </li>
+              <li class="nav-item" >                
+                <input class="searchbar"type="text" placeholder="Search item.." name="search" onkeyup="myfunction()"id="product">
+                <button id="searchicon" type="submit"><i class="fas fa-search"></i></button>                               
+              </li>
             </ul>
           </div>
         </nav>
         </div>
         <!--End of header-->
         <!--main item section-->
+        <main class="edu-main">
         <div class="container">
             <div class="row" id="myProduct">
               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <div class="edu-product">
-                  <a target="_blank" href="#">
-                    <div class="edu-product__image">
-                      <img src="/UI/images/shoes/shoe4.jpg" alt="a cute shoe" >
+                  <div class="slider-for">
+
+                    <div>
+                      <img src="../images/GIZR-VZ65_V1.jpg">
                     </div>
-                    <div class="caption-image"> SHOES UGX 100,000</div>
-                  </a>
+                    <div>
+                      <img src="../images/GIZR-VZ65_V2.jpg">
+                    </div>
+                    <div>
+                      <img src="../images/GIZR-VZ65_V3.jpg">
+                    </div>
+                    <div>
+                      <img src="../images/GIZR-VZ65_V4.jpg">
+                    </div>
+                    <div>
+                      <img src="../images/GIZR-VZ65_V5.jpg">
+                    </div>
+                  </div>
+                  <div class="slider-nav">
+                    <div>
+                      <img src="../images/GIZR-WZ65_V1.jpg">
+                    </div>
+                    <div>
+                      <img src="../images/GIZR-WZ65_V2.jpg">
+                    </div>
+                    <div>
+                      <img src="../images/GIZR-WZ65_V3.jpg">
+                    </div>
+                    <div>
+                      <img src="../images/GIZR-WZ65_V4.jpg">
+                    </div>
+                    <div>
+                      <img src="../images/GIZR-WZ65_V5.jpg">
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div class="table" class="edu-product-description">
-                    <table class="table-dark">
-                        <thead>
-                        <tr>
-                            <th><h3>Item</th>
-                            <th><h3>Description</h3></th>
-                            <th><h3>Quantity<h3></th>
-                            <th><h3>Time of Arrival</h3></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>SHOE</td>
-                            <td>Ladies Office Shoe</td>
-                            <td>1</td>
-                            <td>24 HOURS</td>
-                        </tr>
-                    </tbody>
-                    </table>
-                    <div><button id="popup"><h2>BUY NOW</h2></button></div>                      
+              <div class="col-lg-8 col-md-4 col-sm-6 col-xs-12">
+                <div class="edu-product">
+                  <div class="product-desc">
+                    <h3>Women's Stepper Shoe</h3>
+                    <p class="price">
+                      <span>100,000/=</span><br>
+                      <span class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </span>
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue arcu, lacinia in auctor sit amet, malesuada nec libero. Donec vel nulla turpis. Nunc quis pellentesque diam. Morbi at risus ut mauris condimentum tincidunt eget a odio. Integer eu sapien diam. Maecenas vulputate hendrerit massa vitae lobortis. Quisque ac leo justo. Vivamus facilisis accumsan felis, non blandit elit consequat at. Quisque enim est, viverra quis porta id, pharetra vel felis. Mauris nec bibendum dolor.</p>
+                    <div class="shoe-size">
+                        <h4>Size</h4>
+                             <ul>
+                                <li><a href="#">36</a></li>
+                                <li><a href="#">38</a></li>
+                                <li><a href="#">40</a></li>
+                                <li><a href="#">41</a></li>
+                                <li><a href="#">42</a></li>
+                             </ul>
+                          </div>
+                          <div><a href="../pages/cart.html"><h2>BUY NOW</h2></a></div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div><h2>YOU MAY ALSO LIKE</h2></div>
+                </div>
+              </div>
+        <!--View more products-->
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="edu-product">
+                  <a target="_blank" href="#">
+                    <div class="edu-product__image">
+                      <img src="../images/Casual/cas1.jpg" alt="a cute shoe">
+                    </div>
+                    <div class="caption-image"><button>VIEW MORE</button></div>
+                  </a>
+
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="edu-product">
+                  <a target="_blank" href="#">
+                    <div class="edu-product__image">
+                      <img src="../images/Casual/cas4.jpg" alt="a cute shoe">
+                    </div>
+                    <div class="caption-image"><button>VIEW MORE</button></div>
+                  </a>
+
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="edu-product">
+                  <a target="_blank" href="#">
+                    <div class="edu-product__image">
+                      <img src="../images/sports/ss2.jpg" alt="a cute shoe">
+                    </div>
+                    <div class="caption-image"><button>VIEW MORE</button></div>
+                  </a>
+
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="edu-product">
+                  <a target="_blank" href="#">
+                    <div class="edu-product__image">
+                      <img src="../images/sports/ss4.jpg" alt="a cute shoe">
+                    </div>
+                    <div class="caption-image"><button>VIEW MORE</button></div>
+                  </a>
+
                 </div>
               </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <div><h2>YOU MAY ALSO LIKE</h2></div>
-                </div>
         </div>
-        <!--View more products-->
-        <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-          <div class="edu-product">
-            <a target="_blank" href="#">
-              <div class="edu-product__image">
-                <img src="/UI/images/Casual/cas1.jpg" alt="a cute shoe">
-              </div>
-              <div class="caption-image"><button>VIEW MORE</button></div>
-            </a>
-
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-          <div class="edu-product">
-            <a target="_blank" href="#">
-              <div class="edu-product__image">
-                <img src="/UI/images/Casual/cas4.jpg" alt="a cute shoe">
-              </div>
-              <div class="caption-image"><button>VIEW MORE</button></div>
-            </a>
-
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-          <div class="edu-product">
-            <a target="_blank" href="#">
-              <div class="edu-product__image">
-                <img src="/UI/images/sports/ss2.jpg" alt="a cute shoe">
-              </div>
-              <div class="caption-image"><button>VIEW MORE</button></div>
-            </a>
-
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-          <div class="edu-product">
-            <a target="_blank" href="#">
-              <div class="edu-product__image">
-                <img src="/UI/images/sports/ss4.jpg" alt="a cute shoe">
-              </div>
-              <div class="caption-image"><button>VIEW MORE</button></div>
-            </a>
-
-          </div>
-        </div>
-      </div>
-    </div>
+      </main>
 
     <!--End of View more products-->
 
@@ -168,7 +205,7 @@
             <div class="row">
               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                 <div class="navbar-brand__logo">
-                  <img id ="logo" src="/UI/images/logo.png">
+                  <img id ="logo" src="../images/logo.png">
                 </div>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
@@ -212,9 +249,9 @@
               <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
             </form>
         </div>
-          <script src="/UI/script/bootstrap.min.js"></script>
-          <script src="/UI/script/slick.min.js"></script>
-          <script src="/UI/script/script.js"></script>
+          <script src="../script/bootstrap.min.js"></script>
+          <script src="../script/slick.min.js"></script>
+          <script src="../script/script.js"></script>
 
 </body>
 </html>

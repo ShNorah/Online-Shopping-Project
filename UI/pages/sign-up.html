@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+      <script src="../css/jquery-ui.js"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../css/bootstrap.min.css"/> 
+      <link href="../fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet"> <!--load all styles -->     
+      <link rel="stylesheet" href="../css/home.css"/>
+      <link rel="stylesheet" href="../css/styles.css"/>
+
+        <title>Sign Up</title>
+    </head>
+    <body>
+      <div class="edu-header">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+          <a class="navbar-brand" href="#">
+            <div class="navbar-brand__logo">
+              <img id ="logo" src="../images/logo.png">
+            </div>
+            </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav my-2 my-lg-0 edu-login">
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/sign-in.html">login</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+        <main class="edu-main">
+          <div class="edu-card">
+          <div class="card">
+              <h1 id="h1">Sign Up</h1>
+              <form id="form" onsubmit="return validate()" action="./pages/signeduser.html">
+                  <label for="uname">Username</label><br>
+                  <input type="text" id="uname" name="uname" required><br>
+                  <label for="email">Email</label><br>
+                  <input type="email" id="email" name="email" required><br>
+                  <label for="password">Password</label><br>
+                  <input type="password" id="password" name="password" required><br>
+                  <input type="submit" onsubmit="validate()" value="SIGN UP">
+                  <br><br>
+                  <p id="p">Already have an account? <a href="./pages/sign in.html"> Sign in</a></p>
+              </form>
+            </div>
+          </div>
+          <br>
+          <div class="footer">
+              <div class="container">
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xm-6">
+                  <div class="navbar-brand__logo">
+                    <img id ="logo" src="../images/logo.png">
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xm-6">
+                  <h4>Quick Links</h4>
+                  <ul class="footer__links">
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Store Location</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xm-6">
+                  <h4>Follow us</h4>
+                  <ul class="footer__media">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+            </div> 
+          </main>
+    </body>
+    <script src="/script/bootstrap.min.js"></script>
+    <script src="./script/script.js"></script>
+    
+</html>
