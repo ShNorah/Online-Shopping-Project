@@ -14,9 +14,19 @@ body{
     font-size: 14pt;
     opacity: 100%;
     padding: 10px 15px;
-    color: black; 
+    color: black;
+    text-transform: capitalize; 
 }
-
+.edu-login .nav-item:last-child a {
+    color: #fff;
+    background: rgba(0,0,0,.5);   
+    border-radius: 5px;
+}
+.edu-login .nav-item:last-child a:hover {
+    color: #fff;
+    background: #000;
+    border-radius: 5px;
+}
 .searchbar{
     border-radius: 10em;
     height: 40px;
