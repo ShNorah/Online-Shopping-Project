@@ -14,4 +14,5 @@ To run this project, click here https://shnorah.github.io/Online-Shopping-Projec
 *To signup, click on Signup in the navbar
 *Click on an item of your choice, you will be redirected to the itempage where you view the product description.
 *Click on BUY NOW button to initiate your oder and proceed
-*Clik on cart to add the product to cart and buy later.
+*Clik on cart to add the product to cart and buy later..
+*click on Delete button to remove item from cart.
