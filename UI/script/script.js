@@ -78,10 +78,20 @@ jQuery(document).ready(function(){
 });
 
 //searching an item
-document.addEventListener( "DOMContent Loaded", function(){
-    const list =document.querySelector("#item-container")
-
-  
-})
+function myfunction(){
+  var input, myProduct, filter, texttValue, products;
+  filter = input.value;
+  input =document.getElementById("product");
+  myProduct =document.getElementById("myProduct");
+  for (i=0; i<myProduct.lenghth; i++){
+    products = myProduct[i].detElementsByClassName("edu-product__image")[0];
+    texttValue = products.textContent || products.innerText;
+    if(texttValue.indexOf(filter)> -1){
+    myProduct[i].style.display ="";
+    }else{
+      myProduct[i].style.display = none;
+    }
+  }
+}
 
 
