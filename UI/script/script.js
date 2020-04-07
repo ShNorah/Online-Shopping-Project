@@ -27,6 +27,8 @@ function signIn() {
       for(let i = 0; i < email.length; i++) {
           if (userEmail == email[i] && userPassword == paswrd[i]) {
               alert("Successfully logged in");
+              
+          
               return true;
           } else {
               alert("Invalid email or password");
