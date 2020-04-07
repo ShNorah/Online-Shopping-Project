@@ -9,7 +9,6 @@
   border-radius: 3px;
   padding-bottom: 20px;
   padding-top: 20px;
-  margin-top: 10px;
  
 }
 
@@ -35,13 +34,7 @@
     padding: 7%;
 }
 
-input[type = text] {
-    width: 100%;
-    border-radius: 5px;
-    border-color: black;
-    border-width: 1px;
-    padding: 12px 0px;
-}
+
 
 input[type = password] {
     width: 100%;
@@ -95,6 +88,15 @@ header {
     padding-top: 70px;
 }
 
+footer {
+    background-color: #c9485b;
+    font-family: 'Gotu', sans-serif;
+    height: 200px;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 35px;
+}
+
 a:link {
     color: black;
     background-color: transparent;
@@ -125,10 +127,10 @@ a:visited {
     .card {
         width: 80%;
         box-shadow: 0 0px 0px 0 rgba(0,0,0,0);
-        background-color: #DCD6F7;
+        background-color: rgb(201,72,91, .2);
     }
     .body {
-        background-color: #DCD6F7;
+        background-color: rgb(201,72,91, .2);
     }
     header {
         height: auto;
