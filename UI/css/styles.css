@@ -34,9 +34,7 @@
     padding: 7%;
 }
 
-
-
-input[type = password] {
+.signin {
     width: 100%;
     border-radius: 5px;
     border-color: black;
@@ -44,15 +42,9 @@ input[type = password] {
     padding: 12px 0px;
     font-weight: lighter;
 }
-
-input[type = email] {
-    width: 100%;
-    border-radius: 5px;
-    border-color: black;
-    border-width: 1px;
-    padding: 12px 0px;
+ul.navbar-nav.my-2.my-lg-0.edu-login {
+    margin-left: auto;
 }
-
 input[type = submit] {
     width: 100%;
     border-radius: 50px;
