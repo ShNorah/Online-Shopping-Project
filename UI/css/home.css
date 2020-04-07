@@ -10,7 +10,7 @@ body{
     padding-bottom: 2%;
 }
 .edu-header {
-    background: #c9485b;;
+    background: #c9485b;
     height:100px;
     font-weight: bolder;
     font-size: 14pt;
@@ -74,7 +74,9 @@ main.edu-main {
     background-size: 100% 100%;
     text-align: center;
 }
-
+button{
+    background-color:#c9485b;
+}
 .edu-banner__stores{
     height: 500px;
     background-image: url('../images/sports-banner-shoe.jpg');
